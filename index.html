@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale 1.0">
+        <title>Digital Portfolio Website - Easy Tutorials</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container"></div>
+            <nav>
+                <img src="" class="logo">
+            <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+           <div class="header-text">
+                    <p > STUDENT </p>
+                    <h1>Hello Everyone, I'm  <span>AtchayaJayamani</span> <br>from Mayiladuthurai</h1>
+                    </div>
+            </div>
+        </div>
+<!------------------about---------------->        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="About-img.svg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I am a talented, ambitious and hardworking individual, with broad skills
+                        and experience in digital and printed marketing, social media and leading projects.
+                        Furthermore, I am adept at handling multiple tasks on a daily basis competently and at working well under pressure.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"onclick="opentab('laungage')">Laungage</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                       <div class="tab-contents active-tab"id="laungage">
+                        <ul>
+                            <li><span>KNOW</span> <br>
+                                <br>★ Tamil<br>★ English</li>
+                            </ul>
+                       </div>
+                       <div class="tab-contents " id="education">
+                        <ul>
+                        <li><span>B.Sc.Computer Science</span><br> <br>★ Dharmapuram Adhinam Arts College <br>★ 
+                            Annamalai University <br><br> <span>Python</span><br><br>★ Besant technologies<span><br><br>Microsoft Office</span><br><br>★ Naan mudhalvan</li>
+                  </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-----------Skills-------------->
+<div id="Skills"></div>
+<div class="container">
+    <h1 class="sub-title">Computer Skills</h1>
+    <div class="Skills-list">
+        <div>
+            <h2><span>MICROSOFT OFFICE</span></h2>
+      <br>     <p>Oriented in Microsoft Office Application such as Microsoft Office Word,Excel,Powerpoint.
+                Capable of Editing Presentation different Microsoft Office Application</p>
+                <a href="#">learn more</a>
+        </div>
+        <div>
+            <h2><span>PYTHON</span></h2><br>
+            <p>Good problem-solving and analytical skills</p>
+                <a href="#">learn more</a>
+        </div>
+        <div>
+            <h2><span> TYPE WRITING</span></h2><br>
+            <p>I able to know junior level fast typewriting skills</p>
+                <a href="#">learn more</a>
+        </div>
+</div>
+</div>
+<!----------------------Portfolio------------>
+<div id="Portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+    <div class="work">
+        <img src="Work 1.jpg" >
+        <div class="layer">
+           <br> <h3><span>Mobile Application Development</span></h3>
+            <br><p>Mobile Application Development is the set of processes and procedures involved in 
+                writing software for small, wireless computing devices, such as smartphones and other hand-held devices.</p>
+        </div>
+    </div>
+    <div class="work">
+        <img src="Work 2.jpg" >
+        <div class="layer">
+            <br> <h3> <span>Web Designer</span></h3>
+             <br><p> A web designer is responsible for creating the design and layout of a website or web pages. 
+                Unlike web developers, who specialise in creating new websites' structures and the code</p>
+         </div>
+    </div>
+    <div class="work">
+        <img src="Work 3.jpg" >
+        <div class="layer">
+            <br> <h3><span>UX/UX Designer</span></h3>
+             <br><p> UX and UI designers might work on the same product, but they have different duties and goals.
+                 UX designers often create wireframes and testable prototypes</p>
+         </div>
+    </div>
+    </div>
+</div>
+</div>
+       
+
+<!-------------------Resume---------->
+<div id="Resume">
+     <div class="row1"> 
+        <h1 class="sub-title">Resume</h1>
+            <center>
+                <div class="container2">
+                    <a href="Resume.pdf" class="Download-button">Download CV</a>
+                    </div>
+            </center>
+      </div>
+        </div>
+            <footer>
+                <p>&COPY; 2023 AtchayaJayamani</p>
+            </footer>
+              
+
+  <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+                  var tabcontents = document.getElementsByClassName("tab-contents");
+                  function opentab(tabname){
+                      for(tablink of tablinks){
+                          tablink.classList.remove("active-link");
+                      }
+                      for(tabcontent of tabcontents){
+                          tabcontent.classList.remove("active-tab");
+                      }
+                      event.currentTarget.classList.add("active-link");
+                      document.getElementById(tabname).classList.add("active-tab");
+                      
+                  }
+        </script>
+        </div>
+    </div>
+</div>
+    </body>
+</html>
